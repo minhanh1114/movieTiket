@@ -3,14 +3,14 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer class="px-10 md:px-16 lg:px-24 xl:px-32 w-full mt-30">
-            <div class="flex flex-col md:flex-row items-start justify-center gap-10 py-10 border-b border-gray-500/30">
-                <div class="max-w-96">
+        <footer className="px-10 md:px-16 lg:px-24 xl:px-32 w-full mt-30">
+            <div className="flex flex-col md:flex-row items-start justify-center gap-10 py-10 border-b border-gray-500/30">
+                <div className="max-w-96">
                     <img src={assets.marvelLogo} alt="logo app" />
-                    <p class="mt-6 text-sm text-gray-300">
+                    <p className="mt-6 text-sm text-gray-300">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
                     </p>
-                    <div class="flex items-center gap-2 mt-3">
+                    <div className="flex items-center gap-2 mt-3">
                         <a href="#">
                             <img src={assets.appStore} alt="" />
                         </a>
@@ -20,10 +20,10 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="w-1/2 flex flex-wrap md:flex-nowrap justify-between">
+                <div className="w-1/2 flex flex-wrap md:flex-nowrap justify-between">
                     <div>
-                        <h2 class="font-semibold  mb-5">RESOURCES</h2>
-                        <ul class="text-sm text-gray-300 space-y-2 list-none">
+                        <h2 className="font-semibold  mb-5">RESOURCES</h2>
+                        <ul className="text-sm text-gray-300 space-y-2 list-none">
                             <li>
                                 <a href="#">Documentation</a>
                             </li>
@@ -39,8 +39,8 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h2 class="font-semibold  mb-5">COMPANY</h2>
-                        <div class="text-sm text-gray-300 space-y-2 list-none">
+                        <h2 className="font-semibold  mb-5">COMPANY</h2>
+                        <div className="text-sm text-gray-300 space-y-2 list-none">
                             <li>
                                 <a href="#">Home</a>
                             </li>
@@ -58,7 +58,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p class="py-4 text-center text-xs md:text-sm text-gray-300">
+            <p className="py-4 text-center text-xs md:text-sm text-gray-300">
                 Copyright {new Date().getFullYear()} © <a href="https://github.com">Truong Tuan</a>. All Right
                 Reserved.
             </p>

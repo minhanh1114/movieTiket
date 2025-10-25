@@ -9,6 +9,7 @@ import SelectDate from '@/components/SelectDate';
 // fixed cứng
 import { dummyDateTimeData } from '@/assets/assets';
 import MovieList from '@/components/MovieList';
+import Loading from '@/components/Loading';
 
 const MovieDetail = () => {
     const { id } = useParams();
@@ -20,7 +21,7 @@ const MovieDetail = () => {
 
     return movie ? (
         <div className=" flex flex-col justify-center items-center ">
-            <div className="container">
+            <div className="custom-container">
                 <div className="flex flex-col md:flex-row items-start justify-start gap-8">
                     <div>
                         <img src={movie.poster_path} alt="" className="h-105 max-w-70 rounded-xl object-cover" />
@@ -28,7 +29,7 @@ const MovieDetail = () => {
                     <div className="flex flex-col gap-4">
                         <p className="text-primary uppercase font-medium">English</p>
                         <h1 className="text-3xl font-bold text-balance max-w-90">{movie.title}</h1>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 ">
                             <StarIcon className="fill-primary size-5 text-primary" />
                             <span>{movie.vote_average.toFixed(1)} User Rating</span>
                         </div>
@@ -63,7 +64,7 @@ const MovieDetail = () => {
             </div>
         </div>
     ) : (
-        <div>loading.....</div>
+        <Loading />
     );
 };
 

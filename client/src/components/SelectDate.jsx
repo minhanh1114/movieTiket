@@ -28,10 +28,10 @@ const SelectDate = ({ dateTime, id }) => {
             <BlurPrimary top="0" left="-80px" />
             <BlurPrimary bottom="0" right="-80px" />
             <h2 className="text-medium text-xl">Choose Date</h2>
-            <div className="flex justify-between items-center px-5">
-                <div className="flex-center gap-4 my-4">
+            <div className="flex flex-col md:flex-row items-center justify-between px-5">
+                <div className="flex-center  gap-4 my-4">
                     <ChevronLeft className="size-5 cursor-pointer" />
-                    <div className="flex gap-2">
+                    <div className="flex flex-wrap gap-2">
                         {Object.keys(dateTime).map((time, index) => (
                             <button
                                 key={index}
